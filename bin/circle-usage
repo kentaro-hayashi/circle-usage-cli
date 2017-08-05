@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const CircleUsage = require('../lib/circle-usage');
+const env = {
+  PAGE           : 100,
+  CIRCLE_TOKEN   : process.env.CIRCLE_TOKEN,
+  MAX_MINUTE     : process.env.CIRCLE_MAX_MINUTE,
+  STARTTIME      : process.argv[2],
+  OUTPUT_FUNCTION: console.log,
+};
+
+const circleUsage = new CircleUsage(env);
+circleUsage.run().catch((error) => {
+  console.log(error);
+});

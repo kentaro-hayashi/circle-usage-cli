@@ -1,0 +1,21 @@
+{
+  "name": "circle-usage-cli",
+  "version": "1.0.0",
+  "description": "Simple CLI for Circle CI usage",
+  "main": "lib/circle-usage.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "lintaroken",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "circle-usage": "bin/circle-usage"
+  },
+  "dependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0",
+    "moment": "^2.18.1",
+    "request": "^2.81.0"
+  }
+}
