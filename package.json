@@ -1,6 +1,6 @@
 {
   "name": "circle-usage-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple CLI for Circle CI usage",
   "main": "lib/circle-usage.js",
   "scripts": {
@@ -11,6 +11,10 @@
   "preferGlobal": true,
   "bin": {
     "circle-usage": "bin/circle-usage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lintaroken/circle-usage-cli.git"
   },
   "dependencies": {
     "chai": "^4.1.0",
